@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
+import {FontAwesomeIcon} from 
+'
+
 
 const Menu = () => {
   return (
     <div>
-        <Image src=""/>
+        <FontAwesomeIcon icon="fa-solid fa-bars" />
     </div>
   )
 }
