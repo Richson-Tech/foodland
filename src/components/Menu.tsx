@@ -13,7 +13,7 @@ const links = [
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  // TEMPORARY USER 
+  // TEMPORARY USER
   const user = false;
   return (
     <div>
@@ -40,8 +40,7 @@ const Menu = () => {
             {item.title}
           </Link>
         ))}
-        <Link href="">Login</Link>
-        <Link href="">Orders</Link>
+        {!user ? <Link href="">Login</Link> : <Link href="">Orders</Link>}
       </div>
     </div>
   );
