@@ -4,7 +4,7 @@ import React from 'react'
 
 const CartIcon = () => {
   return (
-    <Link href="/cart">
+    <Link href="/cart" className='flex items-center gap-4'>
     <div className='relative w-8 h-8'>
         <Image src="/cart.png" alt='cart image icon' fill/>
     </div>
