@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import CountDown from "./CountDown";
 
 const Offer = () => {
   return (
@@ -13,6 +14,7 @@ const Offer = () => {
           Progressively simplify effective e-toilers and process-centric methods
           of empowermwnt. Quickly potificate parallel.
         </p>
+        <CountDown/>
         <button className="bg-red-500 text-white rounded-md py-3 px-6">Order Now</button>
       </div>
       {/* TEXT CONTAINER  */}
