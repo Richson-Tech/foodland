@@ -43,17 +43,6 @@ const Menu = () => {
             </Link>
           ))}
 
-          {/* LONG WAY */}
-          {/* {!user ? (
-            <Link href="/login" onClick={() => setOpen(false)}>
-              Login
-            </Link>
-          ) : (
-            <Link href="/orders" onClick={() => setOpen(false)}>
-              Orders
-            </Link>
-          )} */}
-
           {/* SHORTCUT */}
           <Link
             href={user ? "/orders" : "login"}

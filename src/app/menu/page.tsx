@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Cart from "./Cart.png";
+import CartIcon from "@/components/CartIcon";
 
 const links = [
   { id: 1, title: "Homepage", url: "/" },
@@ -19,6 +19,26 @@ const Menu = () => {
   const user = false;
   return (
     <div>
+      {/* LONG WAY */}
+      {/* {!open ? (
+        <Image
+          src="/open.png"
+          alt=""
+          width={20}
+          height={20}
+          onClick={() => setOpen(true)}
+        />
+      ) : (
+        <Image
+          src="/close.png"
+          alt=""
+          width={20}
+          height={20}
+          onClick={() => setOpen(false)}
+        />
+      )} */}
+      
+      {/* SHORTCUT */}
       <Image
         src={open ? "/close.png" : "/open.png"}
         alt=""
@@ -35,6 +55,16 @@ const Menu = () => {
             </Link>
           ))}
 
+          {/* LONG WAY */}
+          {/* {!user ? (
+            <Link href="/login" onClick={() => setOpen(false)}>
+              Login
+            </Link>
+          ) : (
+            <Link href="/orders" onClick={() => setOpen(false)}>
+              Orders
+            </Link>
+          )} */}
 
           {/* SHORTCUT */}
           <Link
@@ -44,7 +74,7 @@ const Menu = () => {
             {user ? "Orders" : "Login"}
           </Link>
           <Link href="/cart" onClick={() => setOpen(false)}>
-            <Cart />
+            <CartIcon />
           </Link>
         </div>
       )}
