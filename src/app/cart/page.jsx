@@ -51,7 +51,7 @@ const CartPage = () => {
           <span className="">Delivery Cost</span>
           <span className="text-green-500">FREE!</span>
         </div>
-        <hr className="my-2" />
+        <hr className="my-2"/>
         <div className="flex justify-between">
           <span className="">TOTAL(INCL. VAT)</span>
           <span className="font-bold">$81.70</span>
