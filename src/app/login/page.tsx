@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const LoginPage = () => {
   return (
-    <div className="">
+    <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center">
       {/* BOX  */}
       <div className="">
         {/* IMAGE CONTAINER  */}
@@ -34,6 +35,9 @@ const LoginPage = () => {
             />
             <span>Sign in with Facebook</span>
           </button>
+          <p>
+            Have a problem? <Link href="/"></Link>Contact Us
+          </p>
         </div>
       </div>
     </div>
