@@ -5,6 +5,7 @@ import Offer from "@/components/Offer";
 
 
 export default function Home() {
+  <link rel="icon" type="image/x-icon" href="./bitmoji.png"></link>
   
   return (
     <main>
