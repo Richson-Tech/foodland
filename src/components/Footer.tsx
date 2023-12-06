@@ -3,7 +3,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Footer = () => {
-  const [Year, setYear] = useState();
+  const [Year, setYear] = useState(new Date().getFullYear());
+
   useEffect(() => {
     const getYear = () => setYear(new Date().getFullYear());
     getYear();
