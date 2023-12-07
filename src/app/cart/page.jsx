@@ -56,7 +56,7 @@ const CartPage = () => {
           <span className="">TOTAL(INCL. VAT)</span>
           <span className="font-bold text-[#00A082]">$81.70</span>
         </div>
-        <button className="bg-[#00A082] text-white p-3 rounded-md w-1/2 self-end">
+        <button className="bg-[#00A082] text-white p-3 rounded-md w-1/2 self-end lg:w-4/6 xl:w-5/6">
           CHECKOUT
         </button>
       </div>
