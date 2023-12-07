@@ -41,7 +41,7 @@ const CartPage = () => {
       <div className="h-1/2 p-4 flex flex-col gap-4 justify-center lg:h-full lg:w-1/3 2xl:w-1/2 lg:px-20 xl:px-40 2xl:text-xl 2xl:gap-6">
         <div className="flex justify-between">
           <span className="">Subtotal (3 items)</span>
-        <span className="text-[#00A082]">$81.70</span>
+          <span className="text-[#00A082]">$81.70</span>
         </div>
         <div className="flex justify-between">
           <span className="text-[#00A082]">Service Cost</span>
@@ -51,7 +51,7 @@ const CartPage = () => {
           <span className="text-[#00A082]">Delivery Cost</span>
           <span className="text-[#00A082]">FREE!</span>
         </div>
-        <hr className="my-2"/>
+        <hr className="my-2" />
         <div className="flex justify-between">
           <span className="">TOTAL(INCL. VAT)</span>
           <span className="font-bold text-[#00A082]">$81.70</span>
