@@ -18,12 +18,12 @@ const Footer = () => {
       >
         FOODLAND
       </Link>
-      <p className=" flex flex-col items-center justify-center text-base mt-20 font-['Work_Sans'] md:text-lg lg:text-xl xl:text-2xl ">
-        <div className="flex flex-row">
+      <p className=" flex flex-col items-center justify-between text-base font-['Work_Sans'] md:text-lg lg:text-xl xl:text-2xl ">
+        <div className="">
           All Rights Reserved
           <sup className="text-base font-bold">&copy;</sup>
         </div>
-        <span className="flex flex-row text-sm font-semibold pl-2">
+        <span className=" text-sm font-semibold pl-2">
           RICHSON TECH. <span className="pl-2">{Year}</span>{" "}
         </span>
       </p>
