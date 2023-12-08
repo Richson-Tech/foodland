@@ -45,7 +45,7 @@ const Menu = () => {
 
           {/* SHORTCUT */}
           <Link
-            href={user ? "/orders" : "login"}
+            href={user ? "/orders" : "/login"}
             onClick={() => setOpen(false)}
           >
             {user ? "Orders" : "Login"}
