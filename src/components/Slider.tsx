@@ -43,7 +43,7 @@ const Slider = () => {
       <div className="w-full flex-1 relative">
         <Image
           src={data[currentSlide].image}
-          alt="slider image"
+          alt="slider foods image"
           fill
           className="object-cover"
         />
