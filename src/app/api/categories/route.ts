@@ -1,5 +1,14 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from "next/server";
 
-export const GET = ()=>{
-    return new NextResponse("Hello", {status:200})
-}
+// FETCH ALL CATEGORIES
+export const GET = () => {
+  try {
+  } catch (err) {
+    return new NextResponse(
+      JSON.stringify({ message: "Something went wrong!" }),
+      { status: 500 }
+    );
+  }
+
+  return new NextResponse("Hello", { status: 200 });
+};
