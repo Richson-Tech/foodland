@@ -1,3 +1,4 @@
+import { ProductType } from "@/types/types";
 import Image from "next/image";
 import React from "react";
 
@@ -13,7 +14,7 @@ const getData = async ()=> {
 
 
 const Featured = async () => {
-  const featuredProducts = await getData();
+  const featuredProducts:ProductType[] = await getData();
   return (
     <div className="w-screen overflow-x-scroll text-black">
       {/* WRAPPER  */}
