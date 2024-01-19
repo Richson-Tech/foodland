@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "FOODLAND",
-  description: "A food app",
+  description: "The Paradise of Burgers and Pizzas",
   
 };
 
