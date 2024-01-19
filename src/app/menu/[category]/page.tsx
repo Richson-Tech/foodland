@@ -3,7 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
-const CategoryPage = () => {
+const getData = async (category:string)=> {
+  const res = await fetch(`http://localhost:3001/api/products?cat=${category}`, {
+    cache:"no-store"
+  })
+  if(!res.ok) {
+    throw new Error("Failled !");
+  }
+  return res.json();
+}
+
+type Props = {
+  params:{category:string}
+}
+
+const CategoryPage = ({params} : Props) => {
   return (
     <div className="flex flex-wrap text-[#00A082]">
       {pizzas.map((item) => (
