@@ -1,3 +1,4 @@
+"use client";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,6 +6,8 @@ import React from "react";
 
 const LoginPage = () => {
   const {data, status} = useSession();
+  console.log("data:" + data)
+  console.log("status:" + status)
   return (
     <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center">
       {/* BOX */}
