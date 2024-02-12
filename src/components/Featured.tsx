@@ -7,7 +7,7 @@ const getData = async ()=> {
     cache:"no-store"
   })
   if(!res.ok) {
-    throw new Error("Failled !");
+    throw new Error("Failled");
   }
   return res.json();
 }
@@ -41,7 +41,7 @@ const Featured = async () => {
               <h1 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">
                 {items.title}
               </h1>
-              <p className="p4 2xl:p-8">{items.desc}</p>
+              <p className="p-4 2xl:p-8">{items.desc}</p>
               <span className="text-xl font-bold">{items.price}</span>
               <button className="bg-red-500 text-white p-2 rounded-md">
                 Add to Cart
