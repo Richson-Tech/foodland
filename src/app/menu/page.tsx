@@ -7,7 +7,7 @@ const getData = async ()=> {
     cache:"no-store"
   })
   if(!res.ok) {
-    throw new Error("Failled !");
+    throw new Error("Failled!");
   }
   return res.json();
 }
